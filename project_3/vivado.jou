@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Mar 23 01:26:43 2019
+# Process ID: 9844
+# Current directory: D:/Documents/Bilkent/2nd Year/EEE 102/EE102 proje/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9208 D:\Documents\Bilkent\2nd Year\EEE 102\EE102 proje\project_3\project_3.xpr
+# Log file: D:/Documents/Bilkent/2nd Year/EEE 102/EE102 proje/project_3/vivado.log
+# Journal file: D:/Documents/Bilkent/2nd Year/EEE 102/EE102 proje/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Documents/Bilkent/2nd Year/EEE 102/EE102 proje/project_3/project_3.xpr}
+update_compile_order -fileset sources_1

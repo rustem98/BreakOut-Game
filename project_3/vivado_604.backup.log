@@ -1,0 +1,176 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Dec 28 14:41:09 2018
+# Process ID: 604
+# Current directory: C:/Users/user/Desktop/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12264 C:\Users\user\Desktop\project_3\project_3.xpr
+# Log file: C:/Users/user/Desktop/project_3/vivado.log
+# Journal file: C:/Users/user/Desktop/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Desktop/project_3/project_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 731.461 ; gain = 57.441
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A37F05A
+set_property PROGRAM.FILE {C:/Users/user/Desktop/project_3/project_3.runs/impl_1/VGAController.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/user/Desktop/project_3/project_3.runs/impl_1/VGAController.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: VGAController
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1555.469 ; gain = 115.555
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'VGAController' [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/VGAController.vhd:13]
+INFO: [Synth 8-3491] module 'ClockDivider' declared at 'C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/ClockDivider.vhd:4' bound to instance 'Component1' of component 'ClockDivider' [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/VGAController.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'ClockDivider' [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/ClockDivider.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'ClockDivider' (1#1) [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/ClockDivider.vhd:9]
+INFO: [Synth 8-3491] module 'Sync' declared at 'C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Sync.vhd:6' bound to instance 'Component2' of component 'Sync' [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/VGAController.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'Sync' [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Sync.vhd:14]
+INFO: [Synth 8-3491] module 'BallController' declared at 'C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:6' bound to instance 'ballControl' of component 'BallController' [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Sync.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'BallController' [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:18]
+WARNING: [Synth 8-6014] Unused sequential element wallHorizontalBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:119]
+WARNING: [Synth 8-6014] Unused sequential element wallVerticalBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:122]
+WARNING: [Synth 8-6014] Unused sequential element paddleSurfaceBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:125]
+WARNING: [Synth 8-6014] Unused sequential element paddleSideBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:130]
+WARNING: [Synth 8-6014] Unused sequential element brick0vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:155]
+WARNING: [Synth 8-6014] Unused sequential element brick1vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:157]
+WARNING: [Synth 8-6014] Unused sequential element brick2vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:159]
+WARNING: [Synth 8-6014] Unused sequential element brick3vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:161]
+WARNING: [Synth 8-6014] Unused sequential element brick4vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:163]
+WARNING: [Synth 8-6014] Unused sequential element brick0hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element brick1hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:168]
+WARNING: [Synth 8-6014] Unused sequential element brick2hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:170]
+WARNING: [Synth 8-6014] Unused sequential element brick3hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:172]
+WARNING: [Synth 8-6014] Unused sequential element brick4hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element brick5vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:177]
+WARNING: [Synth 8-6014] Unused sequential element brick6vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:179]
+WARNING: [Synth 8-6014] Unused sequential element brick7vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:181]
+WARNING: [Synth 8-6014] Unused sequential element brick8vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:183]
+WARNING: [Synth 8-6014] Unused sequential element brick9vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:185]
+WARNING: [Synth 8-6014] Unused sequential element brick5hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:188]
+WARNING: [Synth 8-6014] Unused sequential element brick6hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:190]
+WARNING: [Synth 8-6014] Unused sequential element brick7hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:192]
+WARNING: [Synth 8-6014] Unused sequential element brick8hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:194]
+WARNING: [Synth 8-6014] Unused sequential element brick9hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:196]
+WARNING: [Synth 8-6014] Unused sequential element brick10vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:201]
+WARNING: [Synth 8-6014] Unused sequential element brick11vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:203]
+WARNING: [Synth 8-6014] Unused sequential element brick12vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:205]
+WARNING: [Synth 8-6014] Unused sequential element brick13vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:207]
+WARNING: [Synth 8-6014] Unused sequential element brick14vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:209]
+WARNING: [Synth 8-6014] Unused sequential element brick10hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:212]
+WARNING: [Synth 8-6014] Unused sequential element brick11hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:214]
+WARNING: [Synth 8-6014] Unused sequential element brick12hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:216]
+WARNING: [Synth 8-6014] Unused sequential element brick13hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element brick14hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:220]
+WARNING: [Synth 8-6014] Unused sequential element brick15vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:223]
+WARNING: [Synth 8-6014] Unused sequential element brick16vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:225]
+WARNING: [Synth 8-6014] Unused sequential element brick17vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:227]
+WARNING: [Synth 8-6014] Unused sequential element brick18vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:229]
+WARNING: [Synth 8-6014] Unused sequential element brick19vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:231]
+WARNING: [Synth 8-6014] Unused sequential element brick15hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:234]
+WARNING: [Synth 8-6014] Unused sequential element brick16hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:236]
+WARNING: [Synth 8-6014] Unused sequential element brick17hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:238]
+WARNING: [Synth 8-6014] Unused sequential element brick18hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:240]
+WARNING: [Synth 8-6014] Unused sequential element brick19hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:242]
+WARNING: [Synth 8-6014] Unused sequential element brick20vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element brick21vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:249]
+WARNING: [Synth 8-6014] Unused sequential element brick22vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:251]
+WARNING: [Synth 8-6014] Unused sequential element brick23vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:253]
+WARNING: [Synth 8-6014] Unused sequential element brick24vBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:255]
+WARNING: [Synth 8-6014] Unused sequential element brick20hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:258]
+WARNING: [Synth 8-6014] Unused sequential element brick21hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:260]
+WARNING: [Synth 8-6014] Unused sequential element brick22hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:262]
+WARNING: [Synth 8-6014] Unused sequential element brick23hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:264]
+WARNING: [Synth 8-6014] Unused sequential element brick24hBounce_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:266]
+WARNING: [Synth 8-6014] Unused sequential element reserveHorizontalVelocity_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:98]
+WARNING: [Synth 8-6014] Unused sequential element reserveVerticalVelocity_reg was removed.  [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:99]
+INFO: [Synth 8-256] done synthesizing module 'BallController' (2#1) [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Ball_Controller.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Sync' (3#1) [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/Sync.vhd:14]
+INFO: [Synth 8-3491] module 'seven_seg' declared at 'C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/seven_seg.vhd:6' bound to instance 'Component3' of component 'seven_seg' [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/VGAController.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'seven_seg' [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/seven_seg.vhd:14]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/seven_seg.vhd:374]
+WARNING: [Synth 8-614] signal 'a' is read in the process but is not in the sensitivity list [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/seven_seg.vhd:372]
+WARNING: [Synth 8-614] signal 'b' is read in the process but is not in the sensitivity list [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/seven_seg.vhd:372]
+INFO: [Synth 8-256] done synthesizing module 'seven_seg' (4#1) [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/seven_seg.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'VGAController' (5#1) [C:/Users/user/Desktop/project_3/project_3.srcs/sources_1/new/VGAController.vhd:13]
+WARNING: [Synth 8-3331] design Sync has unconnected port pause
+WARNING: [Synth 8-3331] design Sync has unconnected port resume
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1610.645 ; gain = 170.730
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1610.645 ; gain = 170.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1610.645 ; gain = 170.730
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/user/Desktop/project_3/project_3.srcs/constrs_1/new/Constraints.xdc]
+Finished Parsing XDC File [C:/Users/user/Desktop/project_3/project_3.srcs/constrs_1/new/Constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1944.887 ; gain = 504.973
+19 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1944.887 ; gain = 504.973
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 28 15:21:14 2018...

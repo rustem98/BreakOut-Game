@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1546090318">
+  <File Type="BITSTR-BMM" Name="VGAController_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="VGAController_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="VGAController_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="VGAController_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="VGAController.tcl"/>
+  <File Type="OPT-TIMING" Name="VGAController_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="VGAController_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="VGAController_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="VGAController_reports.tcl"/>
+  <File Type="OPT-DRC" Name="VGAController_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="VGAController.hwdef"/>
+  <File Type="PWROPT-DCP" Name="VGAController_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="VGAController_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="VGAController_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="VGAController_placed.dcp"/>
+  <File Type="PLACE-IO" Name="VGAController_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="VGAController_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="VGAController_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="VGAController_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="VGAController_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="VGAController_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="VGAController_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="VGAController.bgn"/>
+  <File Type="PLACE-TIMING" Name="VGAController_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="VGAController_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="VGAController.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="VGAController_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="VGAController_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="VGAController_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="VGAController.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="VGAController_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="VGAController_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="VGAController_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="VGAController_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="VGAController_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="VGAController_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="VGAController.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="VGAController_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="VGAController.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="VGAController_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="VGAController_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="VGAController.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="VGAController_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="VGAController_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="VGAController_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="VGAController_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="VGAController_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="VGAController_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="VGAController_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="VGAController_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="VGAController_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="VGAController_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="VGAController_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="VGAController_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="VGAController_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="VGAController_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="VGAController_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="VGAController_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="VGAController_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="VGAController_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="VGAController_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="VGAController.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="VGAController_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="VGAController.rbt"/>
+  <File Type="BITSTR-NKY" Name="VGAController.nky"/>
+  <File Type="BG-DRC" Name="VGAController.drc"/>
+  <File Type="RDI-RDI" Name="VGAController.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Constants.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Ball_Controller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ClockDivider.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Sync.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/seven_seg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/VGAController.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="VGAController"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
